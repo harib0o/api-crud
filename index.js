@@ -7,14 +7,50 @@ const logger = require('morgan');
 
 const app = express();
 
-
 app.use(logger('dev'));
+app.use(express.urlencoded({ extended: true }));
+app.use(express.json());
 
+app.get('/api/product', (req, res) => {
+    res.status(200);
+    res.send({ productos: [] });
+});
 
-app.get('/hola/:name', (req, res) => {
-    res.status(200).send({ mensaje: `¡Hola ${req.params.name} desde SD con JSON!` });
+app.get('/api/product/:productID', (req, res) => {
+    const productID = req.params.productID;
+
+    res.status(200);
+    res.send({ producto: productID });
+});
+
+app.post('/api/product', (req, res) => {
+    const queProducto = req.body;
+    console.log(queProducto);
+    res.status(200);
+    res.send({
+        mensaje: 'Producto creado',
+        producto: queProducto
+    });
+});
+
+app.put('/api/product/:productID', (req, res) => {
+    const queProducto = req.body;
+    const productID = req.params.productID;
+
+    res.status(200);
+    res.send({
+        mensaje: `Se ha modificado el producto ${productID}`,
+        producto: queProducto
+    });
+});
+
+app.delete('/api/product/:productID', (req, res) => {
+    const productID = req.params.productID;
+
+    res.status(200);
+    res.send({ mensaje: `Se ha eliminado el producto ${productID}` });
 });
 
 app.listen(port, () => {
-    console.log(`API REST ejecutándose en http://localhost:${port}/hola/:nombre`);
+    console.log(`API REST ejecutándose en http://localhost:${port}/api/product`);
 });

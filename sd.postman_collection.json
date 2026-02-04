@@ -1,0 +1,260 @@
+{
+  "info": {
+    "_postman_id": "3aed91d7-a94b-48ab-aaca-2004994e0f0b",
+    "name": "sd",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "51942190",
+    "_collection_link": "https://go.postman.co/collection/51942190-3aed91d7-a94b-48ab-aaca-2004994e0f0b?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "http://localhost:3000/api/product",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/x-www-form-urlencoded",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "urlencoded",
+          "urlencoded": [
+            {
+              "key": "name",
+              "value": "mi producto",
+              "type": "text",
+              "uuid": "d954bc4e-6bb1-4035-94f2-20fbaff78819"
+            },
+            {
+              "key": "price",
+              "value": "200",
+              "type": "text",
+              "uuid": "a2e698ab-69d2-45d7-9424-241a0cb50559"
+            },
+            {
+              "key": "foto",
+              "value": "miProducto.png",
+              "type": "text",
+              "uuid": "dbe10558-5889-4979-9e17-c6dc43fdea3c"
+            },
+            {
+              "key": "category",
+              "value": "general",
+              "type": "text",
+              "uuid": "4a0f2970-3300-4ebc-ace8-383bd5b149da"
+            }
+          ]
+        },
+        "url": {
+          "raw": "http://localhost:3000/api/product?=",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "api",
+            "product"
+          ],
+          "query": [
+            {
+              "key": null,
+              "value": "",
+              "type": "text"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "http://localhost:3000/api/product Copy",
+      "request": {
+        "method": "PUT",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/x-www-form-urlencoded",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "urlencoded",
+          "urlencoded": [
+            {
+              "key": "name",
+              "value": "mi producto",
+              "type": "text",
+              "uuid": "d954bc4e-6bb1-4035-94f2-20fbaff78819"
+            },
+            {
+              "key": "price",
+              "value": "200",
+              "type": "text",
+              "uuid": "a2e698ab-69d2-45d7-9424-241a0cb50559"
+            },
+            {
+              "key": "foto",
+              "value": "miProducto.png",
+              "type": "text",
+              "uuid": "dbe10558-5889-4979-9e17-c6dc43fdea3c"
+            },
+            {
+              "key": "category",
+              "value": "general",
+              "type": "text",
+              "uuid": "4a0f2970-3300-4ebc-ace8-383bd5b149da"
+            }
+          ]
+        },
+        "url": {
+          "raw": "http://localhost:3000/api/product?=",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "api",
+            "product"
+          ],
+          "query": [
+            {
+              "key": "",
+              "value": ""
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "http://localhost:3000/api/product Copy 2",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/x-www-form-urlencoded",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "urlencoded",
+          "urlencoded": [
+            {
+              "key": "name",
+              "value": "mi producto",
+              "type": "text",
+              "uuid": "d954bc4e-6bb1-4035-94f2-20fbaff78819"
+            },
+            {
+              "key": "price",
+              "value": "200",
+              "type": "text",
+              "uuid": "a2e698ab-69d2-45d7-9424-241a0cb50559"
+            },
+            {
+              "key": "foto",
+              "value": "miProducto.png",
+              "type": "text",
+              "uuid": "dbe10558-5889-4979-9e17-c6dc43fdea3c"
+            },
+            {
+              "key": "category",
+              "value": "general",
+              "type": "text",
+              "uuid": "4a0f2970-3300-4ebc-ace8-383bd5b149da"
+            }
+          ]
+        },
+        "url": {
+          "raw": "http://localhost:3000/api/product?",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "api",
+            "product"
+          ],
+          "query": [
+            {
+              "key": "",
+              "value": null,
+              "type": "text"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "http://localhost:3000/api/product Copy 3",
+      "request": {
+        "method": "DELETE",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/x-www-form-urlencoded",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "urlencoded",
+          "urlencoded": [
+            {
+              "key": "name",
+              "value": "mi producto",
+              "type": "text",
+              "uuid": "d954bc4e-6bb1-4035-94f2-20fbaff78819"
+            },
+            {
+              "key": "price",
+              "value": "200",
+              "type": "text",
+              "uuid": "a2e698ab-69d2-45d7-9424-241a0cb50559"
+            },
+            {
+              "key": "foto",
+              "value": "miProducto.png",
+              "type": "text",
+              "uuid": "dbe10558-5889-4979-9e17-c6dc43fdea3c"
+            },
+            {
+              "key": "category",
+              "value": "general",
+              "type": "text",
+              "uuid": "4a0f2970-3300-4ebc-ace8-383bd5b149da"
+            }
+          ]
+        },
+        "url": {
+          "raw": "http://localhost:3000/api/product?",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "api",
+            "product"
+          ],
+          "query": [
+            {
+              "key": "",
+              "value": null
+            }
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
