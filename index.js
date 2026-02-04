@@ -1,14 +1,20 @@
- 'use strict'
+'use strict'
 
- const port = process.env.PORT || 8888;
+const port = process.env.PORT || 3000;
 
- const express = require('express');
- const app = express();
+const express = require('express');
+const logger = require('morgan');
 
- app.get('/hola/:unNombre', (req, res) => {
-     res.status(200).send({ mensaje: `Hola ${req.params.unNombre} desde Express!` });
- });
+const app = express();
 
- app.listen(port, () => {
-     console.log(`API REST ejecutándose en http://localhost:${port}/hola/:unNombre`);
- });
+
+app.use(logger('dev'));
+
+
+app.get('/hola/:name', (req, res) => {
+    res.status(200).send({ mensaje: `¡Hola ${req.params.name} desde SD con JSON!` });
+});
+
+app.listen(port, () => {
+    console.log(`API REST ejecutándose en http://localhost:${port}/hola/:nombre`);
+});
