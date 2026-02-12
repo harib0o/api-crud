@@ -8,7 +8,7 @@ const logger = require('morgan');
 const app = express();
 
 app.use(logger('dev'));
-app.use(express.urlencoded({ extended: true }));
+app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
 
 app.get('/api/product', (req, res) => {
@@ -26,6 +26,7 @@ app.get('/api/product/:productID', (req, res) => {
 app.post('/api/product', (req, res) => {
     const queProducto = req.body;
     console.log(queProducto);
+
     res.status(200);
     res.send({
         mensaje: 'Producto creado',
